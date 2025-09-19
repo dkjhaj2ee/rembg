@@ -1,0 +1,6 @@
+numpy==1.24.4
+opencv-python-headless==4.8.1.78  
+onnxruntime==1.16.0
+Pillow==10.0.1
+rembg==2.0.50
+Flask==2.3.3
