@@ -27,10 +27,12 @@ pip install -r requirements.txt
 
 ### 3. Create requirements.txt
 ```txt
-Flask==2.3.3
-rembg==2.0.50
-Pillow==10.0.1
+numpy==1.24.4
+opencv-python-headless==4.8.1.78  
 onnxruntime==1.16.0
+Pillow==10.0.1
+rembg==2.0.50
+Flask==2.3.3
 ```
 
 ### 4. Run the Application
@@ -38,7 +40,7 @@ onnxruntime==1.16.0
 python app.py
 ```
 
-The application will be available at `http://localhost:5000`
+The application will be available at `http://localhost:3000`
 
 ## Features
 
@@ -63,7 +65,7 @@ The application will be available at `http://localhost:5000`
 
 ## Usage
 
-1. Open your browser and go to `http://localhost:5000`
+1. Open your browser and go to `http://localhost:3000`
 2. Drag and drop an image or click to browse and select one
 3. Wait for the AI to process the image (usually 5-15 seconds)
 4. View the comparison between original and background-removed image
@@ -110,7 +112,7 @@ For production deployment, consider:
 1. **Use a Production WSGI Server**:
    ```bash
    pip install gunicorn
-   gunicorn -w 4 -b 0.0.0.0:5000 app:app
+   gunicorn -w 4 -b 0.0.0.0:3000 app:app
    ```
 
 2. **Set up Nginx as Reverse Proxy**
